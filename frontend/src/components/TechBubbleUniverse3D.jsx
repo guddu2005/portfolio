@@ -4,103 +4,103 @@ import { Layers, Sparkles, CheckCircle2, Network, Zap } from 'lucide-react';
 
 const TECH_DATA = [
   { 
+    name: 'Java Spring Boot', 
+    category: 'Backend Enterprise Core', 
+    color: 0x6366f1, 
+    hex: '#6366f1', 
+    desc: 'Core enterprise backend mastery: Java 21, Spring Boot 3, Spring Security 6 JWT, Microservices & REST APIs.', 
+    connects: ['MERN Stack', 'DSA Skills', 'Redis', 'PostgreSQL', 'Docker'],
+    skills: ['Java 21 LTS', 'Spring Boot 3', 'Spring Security 6', 'JWT Auth', 'Microservices', 'Spring Data JPA']
+  },
+  { 
     name: 'MERN Stack', 
-    category: 'Full Stack Skills', 
+    category: 'Full Stack Web Core', 
     color: 0x10b981, 
     hex: '#10b981', 
-    desc: 'Full Stack MERN development: MongoDB, Express.js, React, and Node.js (Explorin Internship 2024).', 
-    connects: ['React', 'MongoDB', 'Node.js', 'REST APIs'],
+    desc: 'Full Stack MERN development: MongoDB, Express.js, React.js, and Node.js (Explorin Internship 2024).', 
+    connects: ['Java Spring Boot', 'React.js', 'MongoDB', 'Node.js & Express'],
     skills: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs', 'Full Stack Development']
   },
   { 
     name: 'DSA Skills', 
-    category: 'Problem Solving', 
+    category: 'Problem Solving & CS', 
     color: 0xf59e0b, 
     hex: '#f59e0b', 
     desc: '700+ Data Structures & Algorithms challenges solved across C++ & Java on LeetCode/GeeksforGeeks.', 
-    connects: ['Java 21', 'C++ Language', 'Spring Boot 3'],
+    connects: ['Java Spring Boot', 'C++ Language', 'MERN Stack'],
     skills: ['Arrays & Strings', 'Linked Lists', 'Trees & Graphs', 'Dynamic Programming', 'C++', 'Java 21']
   },
   { 
-    name: 'Java 21', 
-    category: 'Backend Skills', 
-    color: 0x6366f1, 
-    hex: '#6366f1', 
-    desc: 'Core language for enterprise REST microservices, Virtual Threads & OOP architecture.', 
-    connects: ['Spring Boot 3', 'REST APIs', 'DSA Skills'],
-    skills: ['Java 21 LTS', 'OOPs', 'Multithreading', 'Collections', 'JVM Tuning']
-  },
-  { 
-    name: 'Spring Boot 3', 
-    category: 'Backend Skills', 
-    color: 0xa855f7, 
-    hex: '#a855f7', 
-    desc: 'Spring Security 6, JWT, Spring Data JPA, Microservices, and RESTful APIs.', 
-    connects: ['Java 21', 'Redis', 'Docker', 'WebSockets'],
-    skills: ['Spring Boot 3', 'Spring Security 6', 'JWT Auth', 'Microservices', 'Spring Data JPA']
-  },
-  { 
-    name: 'React', 
-    category: 'Frontend Skills', 
+    name: 'React.js', 
+    category: 'Frontend UI Mastery', 
     color: 0x06b6d4, 
     hex: '#06b6d4', 
-    desc: 'Reactive Single Page Applications with Hooks, Redux, Tailwind & Vite.', 
-    connects: ['MERN Stack', 'WebSockets', 'REST APIs'],
-    skills: ['React 18', 'Vite', 'Hooks & State', 'Component Design', 'Glassmorphism UI']
+    desc: 'Reactive Single Page Applications with Hooks, Redux, Tailwind CSS, Vite & Glassmorphism UI.', 
+    connects: ['MERN Stack', 'WebSockets', 'Java Spring Boot'],
+    skills: ['React 18', 'Vite', 'Hooks & State', 'Component Architecture', 'Tailwind CSS']
   },
   { 
     name: 'MongoDB', 
-    category: 'Database Skills', 
+    category: 'NoSQL Database', 
     color: 0x059669, 
     hex: '#059669', 
-    desc: 'NoSQL document database storage for MERN stack & Job Portal microservices.', 
-    connects: ['MERN Stack', 'Docker', 'REST APIs'],
+    desc: 'NoSQL document database storage for MERN stack & MentorConnect / Job Portal services.', 
+    connects: ['MERN Stack', 'Node.js & Express', 'Docker'],
     skills: ['MongoDB Atlas', 'Mongoose ODM', 'Aggregation Pipelines', 'BSON Schemas']
   },
   { 
+    name: 'Node.js & Express', 
+    category: 'Server-Side JavaScript', 
+    color: 0x84cc16, 
+    hex: '#84cc16', 
+    desc: 'Event-driven asynchronous backend services and RESTful APIs for MERN applications.', 
+    connects: ['MERN Stack', 'MongoDB', 'React.js'],
+    skills: ['Node.js Runtime', 'Express.js Framework', 'REST API Routes', 'JWT Middleware']
+  },
+  { 
     name: 'Redis', 
-    category: 'Database Skills', 
+    category: 'In-Memory Cache', 
     color: 0xef4444, 
     hex: '#ef4444', 
-    desc: 'In-memory data caching for sub-millisecond query performance & session management.', 
-    connects: ['Spring Boot 3', 'Java 21'],
-    skills: ['In-Memory Cache', 'Session Cache', 'Key-Value Store', 'TTL Expiration']
+    desc: 'In-memory data caching for sub-millisecond query performance & JWT session management.', 
+    connects: ['Java Spring Boot', 'PostgreSQL'],
+    skills: ['In-Memory Cache', 'Session Storage', 'Key-Value Store', 'TTL Expiration']
+  },
+  { 
+    name: 'PostgreSQL', 
+    category: 'Relational SQL Database', 
+    color: 0x3b82f6, 
+    hex: '#3b82f6', 
+    desc: 'Relational database management for LeadFlow-CRM & enterprise backend pipelines.', 
+    connects: ['Java Spring Boot', 'Redis'],
+    skills: ['PostgreSQL 16', 'SQL Queries', 'Relational Schemas', 'Indexing & Joins']
   },
   { 
     name: 'Docker', 
-    category: 'DevOps Skills', 
-    color: 0x3b82f6, 
-    hex: '#3b82f6', 
+    category: 'DevOps & Containers', 
+    color: 0x0284c7, 
+    hex: '#0284c7', 
     desc: 'Containerization & multi-service deployment orchestrations using Docker Compose.', 
-    connects: ['Spring Boot 3', 'MongoDB', 'Git & GitHub'],
-    skills: ['Docker Images', 'Docker Compose', 'Container Orchestration', 'Environment Isolation']
+    connects: ['Java Spring Boot', 'MongoDB', 'PostgreSQL'],
+    skills: ['Docker Images', 'Docker Compose', 'Container Isolation', 'Production Builds']
   },
   { 
     name: 'WebSockets', 
-    category: 'Real-Time Skills', 
+    category: 'Real-Time Streaming', 
     color: 0xec4899, 
     hex: '#ec4899', 
-    desc: 'STOMP & SockJS real-time bi-directional chat streaming for Chat-Sphere application.', 
-    connects: ['React', 'Spring Boot 3'],
+    desc: 'STOMP & SockJS real-time bi-directional messaging for Chat-Sphere application.', 
+    connects: ['React.js', 'Java Spring Boot'],
     skills: ['WebSockets', 'STOMP Protocol', 'SockJS', 'Bi-directional Streaming']
   },
   { 
     name: 'C++ Language', 
-    category: 'Core Programming', 
+    category: 'Core Computer Science', 
     color: 0x8b5cf6, 
     hex: '#8b5cf6', 
     desc: 'Primary language for starting Data Structures & Algorithms from 1st semester.', 
-    connects: ['DSA Skills', 'Java 21'],
+    connects: ['DSA Skills', 'Java Spring Boot'],
     skills: ['C++ STL', 'Pointers & Memory', 'Fast I/O', 'Algorithm Design']
-  },
-  { 
-    name: 'REST APIs', 
-    category: 'Architecture', 
-    color: 0x14b8a6, 
-    hex: '#14b8a6', 
-    desc: 'Stateless API design with OpenAPI / Swagger documentation and JWT validation.', 
-    connects: ['Java 21', 'React', 'MongoDB'],
-    skills: ['RESTful Standards', 'JSON Payloads', 'OpenAPI / Swagger', 'HTTP Status Codes']
   }
 ];
 
@@ -122,7 +122,7 @@ function createTextTexture(text, hexColor) {
 
   // Label text
   ctx.fillStyle = '#ffffff';
-  ctx.font = 'bold 26px Fira Code, monospace';
+  ctx.font = 'bold 24px Fira Code, monospace';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
@@ -175,7 +175,7 @@ export default function TechBubbleUniverse3D({ onSelectTech }) {
         roughness: 0.2,
         metalness: 0.5,
         emissive: tech.color,
-        emissiveIntensity: 0.3
+        emissiveIntensity: 0.35
       });
 
       const mesh = new THREE.Mesh(geometry, material);
@@ -355,9 +355,9 @@ export default function TechBubbleUniverse3D({ onSelectTech }) {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">// WebGL 3D Connected Constellation</span>
-          <h2 className="section-title">My <span className="gradient-text">3D Connected Tech Network</span></h2>
+          <h2 className="section-title">My <span className="gradient-text">3D Connected Tech Universe</span></h2>
           <p className="section-subtitle">
-            An interactive 3D constellation featuring my MERN Stack skills & 700+ DSA skills with live energy pulses. Drag 360° & click any node!
+            An interactive 3D constellation showcasing BOTH my <strong>Java Spring Boot</strong> & <strong>MERN Stack</strong> skills alongside 700+ DSA problem solving capabilities. Drag 360° & click any node!
           </p>
         </div>
 
@@ -367,7 +367,7 @@ export default function TechBubbleUniverse3D({ onSelectTech }) {
             <div ref={mountRef} className="webgl-canvas-mount"></div>
             <div className="webgl-hint">
               <Network size={14} />
-              <span>3D Connected Nodes — Drag 360° & Click Spheres</span>
+              <span>Java Spring Boot & MERN Stack Connected Nodes — Drag 360° & Click Spheres</span>
             </div>
           </div>
 
