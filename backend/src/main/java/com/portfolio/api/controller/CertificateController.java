@@ -11,7 +11,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/certificates")
-@CrossOrigin(origins = "*")
 public class CertificateController {
 
     private final CertificateRepository certificateRepository;
