@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Send, Phone, MapPin, CheckCircle, FileText } from 'lucide-react';
+import { api } from '../services/api';
 
 const GithubIcon = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -27,20 +28,11 @@ export default function Contact() {
     setStatus('');
 
     try {
-      const response = await fetch('http://localhost:8080/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        setStatus('Message sent successfully! Guddu will respond shortly.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setStatus('Failed to send message. Please email directly at reachguddu.dev@gmail.com');
-      }
+      await api.submitContact(formData);
+      setStatus('Message sent successfully! Guddu will respond shortly.');
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
-      setStatus('Message submitted! (Backend connection verified)');
+      setStatus(err.message || 'Failed to send message. Please email directly at reachguddu.dev@gmail.com');
     } finally {
       setIsSubmitting(false);
     }

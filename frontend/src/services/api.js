@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://portfolio-fwu7.onrender.com/api';
 
 const getHeaders = (requireAuth = false) => {
   const headers = {
